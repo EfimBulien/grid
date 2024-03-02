@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center 300px, bottom right;
+  background-image: url('images/back.jpg'), url('images/line.png');
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  color: black;
+  align-items: center;
+  background-color: blue;
+  justify-content: space-between;
+}
+
+header img {
+  height: auto;
+  max-width: 150px;
+  margin-right: auto;
+}
+
+nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: gainsboro;
+  background-color: transparent;
+}
+
+.main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.welcome {
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: larger;
+  text-align: center;
+  background-color: transparent;
+}
+
+.main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image img {
+  height: auto;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.features {
+  gap: 20px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature h2 {
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  line-height: 1.6;
+}
+
+.image {
+  gap: 20px;
+  display: grid;
+  margin-left: 4rem;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dualsense {
+  margin-left: 4rem;
+  text-align: center;
+}
+
+.more {
+  color: white;
+  padding: 1rem 2rem;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+
+.more:hover {
+  background-color: darkblue; 
+}
+
+footer {
+  padding: 1rem;
+  color: white;
+  font-size: 11px;
+  margin-top: 2rem;
+  text-align: left;
+  background-color: blue;
+}
